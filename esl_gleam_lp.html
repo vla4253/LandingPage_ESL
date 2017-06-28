@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+		<link rel="stylesheet" href="css/animate.css" type="text/css">
+	</head>
+	<body>
+	
+		
+		
+		<div class="page">
+			<div class="logo">
+				
+				
+			</div>
+			<div class="main">
+				<span class="main-text-top">
+					THE ESL<br/>
+					SEASON THREE FINALS<br/>
+					ARE COMING!
+				</span>
+				<span class="main-text-bottom">
+					<span class="main-text-bottom-1line">
+						As the official event partner and skin sponsor<br/>
+					</span>
+					<span class="main-text-bottom-2line">
+						Let's celebrate this!<br/>
+					</span>
+					<span class="main-text-bottom-3line">
+						Together, with <b>Miss Rage, mOE</b> and <b>You</b>!
+					</span>
+				</span>
+				<div class="partners"></div>
+				<div class="social">
+					<a href="#g" class="google"></a>
+					<a href="#f" class="facebook"></a>
+					<a href="#t" class="twitter"></a>
+				</div>
+			</div>
+			<div class="prizes">
+				<span class="prizes-1line">	JOIN THE <div class="prizes-csgo"></div> PARTY AND</span>
+				<span class="prizes-2line">WIN 1 OF 5 CRIMSON WEB SKINS:</span>
+				<div class="slider" onselectstart="return false">
+					<a class="button-left" onclick="plusItem(-1)"></a>
+					<img class="items" src="images/item_1.png"/>
+					<img class="items" src="images/item_2.png"/>
+					<img class="items" src="images/item_3.png"/>
+					<img class="items" src="images/item_4.png"/>
+					<img class="items" src="images/item_5.png"/>
+					<a class="button-right" onclick="plusItem(+1)"></a>
+				</div>
+				<span class="prizes-3line">HUNTSMAN KNIFE | CRIMSON WEB (KNIFE 1)</span>
+				<span class="prizes-3line">HUNTSMAN KNIFE | CRIMSON WEB (KNIFE 2)</span>
+				<span class="prizes-3line">HUNTSMAN KNIFE | CRIMSON WEB (KNIFE 3)</span>
+				<span class="prizes-3line">HUNTSMAN KNIFE | CRIMSON WEB (KNIFE 4)</span>
+				<span class="prizes-3line">HUNTSMAN KNIFE | CRIMSON WEB (KNIFE 5)</span>
+				<script>
+					function showItems(n)
+					{
+						var name;
+						var i;
+						var x = document.getElementsByClassName("items");
+						var left = document.getElementsByClassName("button-left");
+						var right = document.getElementsByClassName("button-right");
+						var y = document.getElementsByClassName("prizes-3line");
+						left[0].style.display = "inline-block";
+						left[0].style.marginTop = "0px";
+						for(i = 0; i < x.length; i++)
+						{
+							x[i].style.display = "none";
+							y[i].style.display = "none";
+						}
+						if (n == 1)
+						{
+							x[4].style.opacity = "0.3";
+							x[4].style.display = "inline-block";
+							x[4].style.width = "197px";
+							x[4].style.height = "139px";
+							x[4].style.top = "-15px";
+							x[4].style.left = "95px";
+							x[n-1].style.opacity = "1";
+							x[n-1].style.display = "inline-block";
+							x[n-1].style.width = "328px";
+							x[n-1].style.height = "232px";
+							x[n-1].style.top = "-70px";
+							x[n-1].style.left = "297px";
+							x[n].style.opacity = "0.3";
+							x[n].style.display = "inline-block";
+							x[n].style.width = "197px";
+							x[n].style.height = "139px";
+							x[n].style.top = "-15px";
+							x[n].style.left = "660px";
+							y[0].style.display = "block";
+						}
+						if (n == 2)
+						{
+							x[n-2].style.opacity = "0.3";
+							x[n-2].style.display = "inline-block";
+							x[n-2].style.width = "197px";
+							x[n-2].style.height = "139px";
+							x[n-2].style.top = "-15px";
+							x[n-2].style.left = "95px";
+							x[n-1].style.opacity = "1";
+							x[n-1].style.display = "inline-block";
+							x[n-1].style.width = "328px";
+							x[n-1].style.height = "232px";
+							x[n-1].style.top = "-70px";
+							x[n-1].style.left = "297px";
+							x[n].style.opacity = "0.3";
+							x[n].style.display = "inline-block";
+							x[n].style.width = "197px";
+							x[n].style.height = "139px";
+							x[n].style.top = "-15px";
+							x[n].style.left = "660px";
+							y[1].style.display = "block";
+						}
+						if (n == 3)
+						{
+							x[n-2].style.opacity = "0.3";
+							x[n-2].style.display = "inline-block";
+							x[n-2].style.width = "197px";
+							x[n-2].style.height = "139px";
+							x[n-2].style.top = "-15px";
+							x[n-2].style.left = "95px";
+							x[n-1].style.opacity = "1";
+							x[n-1].style.display = "inline-block";
+							x[n-1].style.width = "328px";
+							x[n-1].style.height = "232px";
+							x[n-1].style.top = "-70px";
+							x[n-1].style.left = "297px";
+							x[n].style.opacity = "0.3";
+							x[n].style.display = "inline-block";
+							x[n].style.width = "197px";
+							x[n].style.height = "139px";
+							x[n].style.top = "-15px";
+							x[n].style.left = "660px";
+							y[2].style.display = "block";
+						}
+						if (n == 4)
+						{
+							x[n-2].style.opacity = "0.3";
+							x[n-2].style.display = "inline-block";
+							x[n-2].style.width = "197px";
+							x[n-2].style.height = "139px";
+							x[n-2].style.top = "-15px";
+							x[n-2].style.left = "95px";
+							x[n-1].style.opacity = "1";
+							x[n-1].style.display = "inline-block";
+							x[n-1].style.width = "328px";
+							x[n-1].style.height = "232px";
+							x[n-1].style.top = "-70px";
+							x[n-1].style.left = "297px";
+							x[n].style.opacity = "0.3";
+							x[n].style.display = "inline-block";
+							x[n].style.width = "197px";
+							x[n].style.height = "139px";
+							x[n].style.top = "-15px";
+							x[n].style.left = "660px";
+							y[3].style.display = "block";
+						}
+						if ( n == 5)
+						{
+							x[n-2].style.opacity = "0.3";
+							x[n-2].style.display = "inline-block";
+							x[n-2].style.width = "197px";
+							x[n-2].style.height = "139px";
+							x[n-2].style.top = "-15px";
+							x[n-2].style.left = "95px";
+							x[n-1].style.opacity = "1";
+							x[n-1].style.display = "inline-block";
+							x[n-1].style.width = "328px";
+							x[n-1].style.height = "232px";
+							x[n-1].style.top = "-70px";
+							x[n-1].style.left = "297px";
+							x[0].style.opacity = "0.3";
+							x[0].style.display = "inline-block";
+							x[0].style.width = "197px";
+							x[0].style.height = "139px";
+							x[0].style.top = "-15px";
+							x[0].style.left = "660px";
+							y[4].style.display = "block";
+						}
+						right[0].style.display = "inline-block";
+					}
+					var slideIndex = 3;
+					showItems(slideIndex);
+					function plusItem(n)
+					{
+						slideIndex += n;
+						if (slideIndex == 0)
+						{
+							slideIndex = 5;
+						}
+						if (slideIndex == 6)
+						{
+							slideIndex = 1;
+						}
+						showItems(slideIndex);
+					}
+				</script>
+			</div>
+			<div class="gleam">
+				<span class="gleam-text">
+					<span class="gleam-text-1line">
+						USE THE APP BELOW AND<br/>
+					</span>
+					<span class="gleam-text-2line">
+						FOLLOW, LIKE <span class="gleam-text-2line-word1">AND</span> SUBSCRIBE<br/>
+					</span>
+					<span class="gleam-text-3line">
+						TO KINGUIN SOCIAL MEDIA CHANNELS<br/><br/><br/>
+					</span>
+					<span class="gleam-text-1line">
+						THE <span class="gleam-text-2line">MORE</span> YOU FOLLOW,<br/>
+					</span>
+					<span class="gleam-text-1line">
+						THE <span class="gleam-text-2line">BIGGER</span> YOUR <span class="gleam-text-2line">CHANCES</span> ARE!
+					</span>
+					
+					<div class="gleam-app">
+						<a class="e-widget generic-loader" href="https://gleam.io/UFuKW/dreamhack-summer-giveaway" rel="nofollow" ></a>
+						<script type="text/javascript" src="https://js.gleam.io/e.js" async="true"></script>
+					</div>
+				</span>
+			</div>
+			<div class="case">
+				<span class="case-text-1line">
+					WINNERS WILL BE ANNOUNCED ON
+				</span>
+				<div class="case-date">
+					<span class="case-date-day">14</span>
+					<div class="case-date-day-lines"></div>
+					<span class="case-date-month">06</span>
+					<div class="case-date-month-lines"></div>
+					<span class="case-date-year">16</span>
+					<div class="case-date-year-lines"></div>
+				</div>
+				<span class="case-text-2line">IN THE MEANTIME YOU CAN</span>
+				<div class="case-button" >
+					<a class="case-button-text" href="#" onmousedown="mouseDown()" onmouseup="mouseUp()">
+						BUY OUR CS:GO ESL UK CASE!
+						<div id="cursor"></div>
+					</a>
+					
+				</div>
+				<span class="case-text-3line">IT'S WORTH EVERY PENNY!</span>
+					<div class="case-section">
+						<span class="case-text-4line-1section">
+							<span class="case-text-4line-1section-words">
+								LIMITED
+							</span>
+							<span class="case-text-4line-1section-words">
+								QUANTITY!
+							</span>
+						</span>
+						<div class="case-box-animation">
+							<div class="case-box"></div>
+						</div>
+						<span class="case-text-4line-2section">
+							<span class="case-text-4line-1section-words">
+								ONLY
+							</span>
+							<span class="case-text-4line-2section-2word">
+								€8.99
+							</span>
+						</span>
+					</div>
+					<div class="background-bottom">
+						<div class="neon-light"></div>
+					</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.viewportchecker.min.js"></script>
+		<script>
+			$(window).load(function(){
+			$('.partners').addClass('hide').each(function(){
+			$(this).viewportChecker({
+			classToAdd: 'show animated bounceInRight',
+			classToRemove: 'hide',
+			offset: '1%'
+			});
+			});
+			setInterval(function(){ document.getElementById("cursor").style.WebkitAnimationPlayState = "running"; document.getElementById("cursor").style.mozAnimationPlayState = "running"; document.getElementById("cursor").style.animationPlayState = "running"; setTimeout(function(){  document.getElementById("cursor").style.WebkitAnimationPlayState = "paused"; document.getElementById("cursor").style.mozAnimationPlayState = "paused"; document.getElementById("cursor").style.animationPlayState = "paused"; }, 988);}, 3988);
+			});
+			$(window).load(function(){
+			$('.case-box').addClass('hide').each(function(){
+			$(this).viewportChecker({
+			classToAdd: 'show animated fadeInUp',
+			classToRemove: 'hide',
+			offset: '1%'
+			});
+			});
+			});
+			$(window).load(function(){
+			$('.case-text-3line').addClass('hide').each(function(){
+			$(this).viewportChecker({
+			classToRemove: 'hide',
+			offset: '1%',
+			repeat: true
+			});
+			});
+			});
+			function ani()
+			{
+				$(document).ready(function(){
+				$('.case-box-animation').addClass('hide').each(function(){
+				$(this).viewport({
+				classToAdd: 'show animated shake',
+				classToRemove: 'hide',
+				offset: '1%',
+				repeat: true
+				});
+				});
+				});
+			}
+		</script>
+		<script>
+			function mouseDown()
+			{
+				var x = document.getElementsByClassName("case-button-text");
+				x[0].style.backgroundImage = "none";
+				x[0].style.backgroundColor = "#970000";
+			}
+			function mouseUp()
+			{
+				var x = document.getElementsByClassName("case-button-text");
+				x[0].style.backgroundImage = "linear-gradient(#d51c01 0%, #880000 50%, #880000 100%)";
+				x[0].style.borderStyle = "solid";
+				
+			}
+		</script>
+	</body>
+</html>
